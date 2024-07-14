@@ -38,5 +38,5 @@ void start() {
     timer_init();
 
     // switch to supervisor mode and jump to main().
-    asm volatile("mret");
+    asm volatile("j main");
 }
