@@ -32,7 +32,7 @@ riscv64-linux-gnu-gdb -x debug.txt
 ```bahs
 ├── gem5
 │   └── build
-│       └── gem5.opt
+│       └── gem5.debug
 └── gem5-riscv-bare-metal-int
     └── kernel.elf
 ```
