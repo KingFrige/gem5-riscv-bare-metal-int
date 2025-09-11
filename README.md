@@ -1,7 +1,7 @@
 # RISCV Bare Metal
 A RISC-V bare-metal example with uart, exception, interrupt and kvmmap.
 
-The tutorial is at [https://mullerlee.cyou/2020/07/09/riscv-exception-interrupt/](https://mullerlee.cyou/2020/07/09/riscv-exception-interrupt/)
+The tutorial is at [riscv-exception-interrupt](https://mullerlee.cyou/2020/07/09/riscv-exception-interrupt/)
 
 ## Requirement
 
@@ -9,20 +9,26 @@ The tutorial is at [https://mullerlee.cyou/2020/07/09/riscv-exception-interrupt/
 - riscv64-linux-gnu-*
 - gem5
 
+```bash
+$ sudo apt install opensbi qemu-system-misc u-boot-qemu
+
+$ sudo apt install terminator
+```
+
 ## Run on qemu
 
 ```bash
-mkdir build
-make
-make run
+$ mkdir build
+$ make
+$ make run
 ```
 
 ## Debug
 ```bash
-mkdir build
-make
-make debug
-riscv64-linux-gnu-gdb -x debug.txt
+$ mkdir build
+$ make
+$ make debug
+$ riscv64-unknown-elf-gdb -x debug.txt
 ```
 
 ## Run on gem5
